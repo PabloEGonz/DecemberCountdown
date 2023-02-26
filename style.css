@@ -4,7 +4,7 @@
 body{
     background-image: url("https://ericportis.com/assets/2013-12-16-xmas-lights/DSC_0599-Animated/quarter.gif");
     background-size: cover;
-    background-blend-mode: ;
+    background-blend-mode:soft-light;
     background-position: center;
     height: 100vh;    
     display: flex;
