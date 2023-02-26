@@ -7,7 +7,7 @@ body{
     background-image: url("photos/xmastree.jpg");
     background-size: cover;
     background-blend-mode:soft-light;
-    background-position: center;
+    background-position: center top;
     height: 100vh;    
     display: flex;
     flex-direction: column;
@@ -28,7 +28,7 @@ a{
 h1{
     color: #f2e8cf;
     font-weight:bolder;
-    text-shadow: 3px 3px #101010;
+    text-shadow: 4px 4px #101010;
     font-size: 65px;
     margin: -170px 0 40px;
 }
