@@ -22,7 +22,7 @@ function playSound(){
 
 let backgroundMusic2 = () => {
     let music2 = new Audio("audios/music2.wav");
-    music2.volume = 0.5;
+    music2.volume = 0.3;
     setTimeout(() => {
         music2.play();
     }, 4000);

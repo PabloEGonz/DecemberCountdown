@@ -19,7 +19,7 @@ function playSound2(){
 }
 let backgroundMusic = () => {
     let music1 = new Audio("audios/music1.wav");
-    music1.volume = 0.5;
+    music1.volume = 0.3;
     setTimeout(() => {
         music1.play();
     }, 2000);
