@@ -10,7 +10,6 @@ function countdown(){
     const m = Math.floor((left / 1000 / 60) % 60);
     const s = Math.floor((left / 1000 ) % 60); 
     document.getElementById('day').innerHTML = d;
-    console.log(d);
     document.getElementById('hour').innerHTML = h < 10 ? "0" + h : h;
     document.getElementById('min').innerHTML = m < 10 ? "0" + m : m;
     document.getElementById('sec').innerHTML = s < 10 ? "0" + s : s;
@@ -25,7 +24,6 @@ function xmasCountdown(){
     const m = Math.floor((remaining / 1000 / 60) % 60);
     const s = Math.floor((remaining / 1000 ) % 60); 
     document.getElementById('xday').innerHTML = d;
-    console.log(d);
     document.getElementById('xhour').innerHTML = h < 10 ? "0" + h : h;
     document.getElementById('xmin').innerHTML = m < 10 ? "0" + m : m;
     document.getElementById('xsec').innerHTML = s < 10 ? "0" + s : s;
