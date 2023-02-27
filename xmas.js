@@ -17,4 +17,3 @@ function playSound2(){
     let audio2 = new Audio("audios/sleighbells.wav");
     audio2.play();
 }
-playSound2()

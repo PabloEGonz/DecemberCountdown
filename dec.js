@@ -19,7 +19,6 @@ function playSound(){
     let audio = new Audio("audios/xmassong.wav");
     audio.play();
 }
-playSound()
 
 
  
