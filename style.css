@@ -75,7 +75,7 @@ div{
     h1{
         text-shadow: 4px 4px 6px white;
         font-size: 45px;
-        margin: -200px 0 20px;
+        margin: -200px 0 40px;
     }
     .time h2{
         font-size: 25px;
@@ -100,6 +100,7 @@ div{
         font-size: 12px;
     }
     #countdown{
+        margin-top: 35px;
         display: block;
     }
     .time{
