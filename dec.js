@@ -8,10 +8,10 @@ function countdown(){
     const h = Math.floor((left / 1000 / 60 / 60) % 24); 
     const m = Math.floor((left / 1000 / 60) % 60);
     const s = Math.floor((left / 1000 ) % 60); 
-    document.getElementById("day").innerHTML = d;
-    document.getElementById('hour').innerHTML = h < 10 ? "0" + h : h;
-    document.getElementById('min').innerHTML = m < 10 ? "0" + m : m;
-    document.getElementById('sec').innerHTML = s < 10 ? "0" + s : s;
+    document.getElementById("day").innerText = d;
+    document.getElementById('hour').innerText = h < 10 ? "0" + h : h;
+    document.getElementById('min').innerText = m < 10 ? "0" + m : m;
+    document.getElementById('sec').innerText = s < 10 ? "0" + s : s;
 }
 setInterval(countdown, 1000);
  
