@@ -80,31 +80,36 @@ h1{
 
 @media only screen and (max-width: 1024px) {
     h1{
-        text-shadow: 4px 4px 6px white;
         font-size: 45px;
         margin: -200px 0 40px;
     }
     .time h2{
         font-size: 25px;
         text-shadow: 
-        0px 0.5px 0px #07076a,
-        0px 1px 0px #07076a,
-        0px 1.5px 0px #07076a,
-        0px 2px 0px #07076a,
-        0px 2.5px 0px #07076a,
-        0px 3px 0px #07076a,
-        0px 3.5px 0px #07076a,
-        0px 4px 0px #07076a,
-        0px 4.5px 0px #07076a,
-        0px 5px 0px #07076a,
-        0px 5.5px 0px #07076a,
-        0px 6px 0px #07076a,
-    
-        6px 6px 5px #eaeaf2;
+        0px 0.2px 0px #3b6225,
+        0px 0.5px 0px #3b6225,
+        0px 1px 0px #3b6225,
+        0px 1.2px 0px #3b6225,
+        0px 1.5px 0px #3b6225,
+        0px 2px 0px #3b6225,
+        0px 2.2px 0px #3b6225,
+        0px 2.5px 0px #3b6225,
+        0px 3px 0px #3b6225,
+        0px 3.2px 0px #3b6225,
+        0px 3.5px 0px #3b6225,
+        0px 4px 0px #3b6225,
+        0px 4.2px 0px #3b6225,
+        0px 4.5px 0px #3b6225,
+        0px 4.7px 5px #183408;
     }
     .time p{
         margin: 0;
         font-size: 12px;
+        text-shadow: 
+    2px 2px  2px black,    
+    3px 3px  3px black,
+    4px 4px  4px black,
+    8px 8px 5px black;
     }
     #countdown{
         margin-top: 35px;
@@ -116,5 +121,9 @@ h1{
         text-align: center;
         justify-content: center;
         margin: 15px;
+    }
+    a{
+        width: 30%;
+        background-color: #3b6225;
     }
 }
