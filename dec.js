@@ -1,5 +1,5 @@
-const december = new Date("December 1 2023 00:00:00");
 
+const december = new Date("December 1 2023 00:00:00");
 
 function countdown(){
     const current = new Date();
@@ -14,5 +14,13 @@ function countdown(){
     document.getElementById('sec').innerText = s < 10 ? "0" + s : s;
 }
 setInterval(countdown, 1000);
+
+function playSound(){
+    let audio = new Audio("audios/xmassong.wav");
+    audio.play();
+}
+playSound()
+
+
  
 

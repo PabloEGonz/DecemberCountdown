@@ -13,3 +13,8 @@ function xmasCountdown(){
     document.getElementById('xsec').innerHTML = s < 10 ? "0" + s : s;
 }
 setInterval(xmasCountdown, 1000);
+function playSound2(){
+    let audio2 = new Audio("audios/sleighbells.wav");
+    audio2.play();
+}
+playSound2()
