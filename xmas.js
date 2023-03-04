@@ -17,3 +17,10 @@ function playSound2(){
     let audio2 = new Audio("audios/sleighbells.wav");
     audio2.play();
 }
+let backgroundMusic = () => {
+    let music1 = new Audio("audios/music1.wav");
+    music1.volume = 0.5;
+    setTimeout(() => {
+        music1.play();
+    }, 2000);
+};
