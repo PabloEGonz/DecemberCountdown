@@ -1,7 +1,7 @@
 
 const december = new Date("December 1 2023 00:00:00");
 
-function countdown(){
+let countdown =() =>{
     const current = new Date();
     const left = december - current;
     const d = Math.floor(left / 1000 / 60 / 60 / 24);   
@@ -15,7 +15,7 @@ function countdown(){
 }
 setInterval(countdown, 1000);
 
-function playSound(){
+let playSound = () => {
     let audio = new Audio("audios/xmassong.wav");
     audio.play();
 }
