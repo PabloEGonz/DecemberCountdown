@@ -1,6 +1,6 @@
 const xmas = new Date("December 24 2023 00:00:00");
 
-function xmasCountdown(){
+let xmasCountdown = () =>{
     const sitting = new Date();
     const remaining = xmas - sitting;
     const d = Math.floor(remaining / 1000 / 60 / 60 / 24);   
@@ -13,7 +13,7 @@ function xmasCountdown(){
     document.getElementById('xsec').innerHTML = s < 10 ? "0" + s : s;
 }
 setInterval(xmasCountdown, 1000);
-function playSound2(){
+let  playSound2 =() =>{
     let audio2 = new Audio("audios/sleighbells.wav");
     audio2.play();
 }
