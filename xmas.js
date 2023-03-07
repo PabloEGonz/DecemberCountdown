@@ -20,11 +20,4 @@ setInterval(xmasCountdown, 1000);
 let  playSound2 =() =>{
     let audio2 = new Audio("audios/sleighbells.wav");
     audio2.play();
-}
-let backgroundMusic = () => {
-    let music1 = new Audio("audios/music1.wav");
-    music1.volume = 0.3;
-    setTimeout(() => {
-        music1.play();
-    }, 2000);
 };

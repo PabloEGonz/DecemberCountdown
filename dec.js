@@ -22,14 +22,6 @@ setInterval(countdown, 1000);
 let playSound = () => {
     let audio = new Audio("audios/xmassong.wav");
     audio.play();
-}
-
-let backgroundMusic2 = () => {
-    let music2 = new Audio("audios/music2.wav");
-    music2.volume = 0.3;
-    setTimeout(() => {
-        music2.play();
-    }, 4000);
 };
 
  
