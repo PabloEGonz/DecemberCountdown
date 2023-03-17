@@ -21,3 +21,16 @@ let  playSound2 =() =>{
     let audio2 = new Audio("audios/sleighbells.wav");
     audio2.play();
 };
+
+function createSnowflake2() {
+    const snowflake = document.createElement('div');
+    snowflake.classList.add('snowflake');
+    snowflake.style.left = Math.random() * window.innerWidth + 'px';
+    snowflake.style.animationDuration = Math.random() * 5 + 5 + 's';
+    document.querySelector('.snow-container').appendChild(snowflake);
+  }
+  setInterval(createSnowflake2, 900);
+  
+  setTimeout(() => {
+    snowflake.remove();
+  }, 5000);
