@@ -24,5 +24,19 @@ let playSound = () => {
     audio.play();
 };
 
+function createSnowflake() {
+  const snowflake = document.createElement('div');
+  snowflake.classList.add('snowflake');
+  snowflake.style.left = Math.random() * window.innerWidth + 'px';
+  snowflake.style.animationDuration = Math.random() * 5 + 5 + 's';
+  document.querySelector('.snow-container').appendChild(snowflake);
+  setTimeout(() => {
+    snowflake.remove();
+  }, 50000);
+}
+
+setInterval(createSnowflake, 1000);
+
+
  
 
