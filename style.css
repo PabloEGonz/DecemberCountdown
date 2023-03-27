@@ -96,19 +96,19 @@ h1{
     height: 15px;
     background: #fff;
     border-radius: 50%;
-    opacity: 0.5;
-    animation-name: snow;
-    animation-duration: 3s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
+    opacity: 0.6;
+    animation: snow 3s linear infinite;
+    
   }
   
   @keyframes snow {
     0% {
-      transform: translateY(-8vh);
+      transform: translateY(-2vh);
+      opacity: 0.79;
     }
     100% {
       transform: translateY(100vh);
+      opacity: 0.5;
     }
   }
 
