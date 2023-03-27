@@ -30,12 +30,12 @@ function createSnowflake() {
   snowflake.style.left = Math.random() * window.innerWidth + 'px';
   snowflake.style.animationDuration = Math.random() * 5 + 5 + 's';
   document.querySelector('.snow-container').appendChild(snowflake);
-  setTimeout(() => {
-    snowflake.remove();
-  }, 50000);
 }
+setInterval(createSnowflake, 900);
 
-setInterval(createSnowflake, 1000);
+setTimeout(() => {
+  snowflake.remove();
+}, 5000);
 
 
  
