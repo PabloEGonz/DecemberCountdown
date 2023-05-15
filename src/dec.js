@@ -19,25 +19,24 @@ let countdown = () => {
 }
 setInterval(countdown, 1000);
 
-let playSound = () => {
-  let audio = new Audio("audios/xmassong.wav");
+const playSound = () => {
+  const audio = new Audio("audios/xmassong.wav");
   audio.play();
 };
 
-function createSnowflake() {
+const createSnowflake = () => {
   const snowflake = document.createElement('div');
   snowflake.classList.add('snowflake');
   snowflake.style.left = Math.random() * window.innerWidth + 'px';
   snowflake.style.animationDuration = Math.random() * 5 + 5 + 's';
   document.querySelector('.snow-container').appendChild(snowflake);
+  setTimeout(() => {
+    snowflake.remove();
+  }, 9000);
 }
-setInterval(createSnowflake, 900);
+setInterval(createSnowflake, 600);
 
-setTimeout(() => {
-  snowflake.remove();
-}, 5000);
 
-///
 
 const xmas = new Date("December 24 2023 00:00:00");
 
@@ -63,17 +62,5 @@ let playSound2 = () => {
   audio2.play();
 };
 
-function createSnowflake2() {
-  const snowflake = document.createElement('div');
-  snowflake.classList.add('snowflake');
-  snowflake.style.left = Math.random() * window.innerWidth + 'px';
-  snowflake.style.animationDuration = Math.random() * 5 + 5 + 's';
-  document.querySelector('.snow-container').appendChild(snowflake);
-}
-setInterval(createSnowflake2, 900);
-
-setTimeout(() => {
-  snowflake.remove();
-}, 5000);
 
 
