@@ -7,7 +7,9 @@ module.exports = {
     entry: './src/dec.js',
     devtool: 'inline-source-map',
     devServer: {
-        static: './dist',
+        static: {
+            directory: path.resolve(__dirname, 'dist'),
+        },
     },
     plugins: [
         new HtmlWebpackPlugin({
@@ -29,6 +31,21 @@ module.exports = {
             {
                 test: /\.(png|svg|jpg|jpeg|gif)$/i,
                 type: 'asset/resource',
+                generator: {
+                    filename: 'images/[name][ext]',
+                },
+            },
+            {
+                test: /\.(wav|mp3)$/,
+                use: [
+                    {
+                        loader: 'file-loader',
+                        options: {
+                            name: '[name].[ext]',
+                            outputPath: 'audios/',
+                        },
+                    },
+                ],
             },
         ],
     },
