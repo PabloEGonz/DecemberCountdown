@@ -17,6 +17,7 @@
 }
 .december {
   background-image: url("./photos/xmastree.jpg");
+  display: none;
 }
 .links {
   position: absolute;
@@ -72,7 +73,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: -1;
+  z-index: 99;
 }
 
 /* Snowflake animation */
@@ -142,7 +143,7 @@
 
 .xmas {
   background-image: url("photos/xmasdeco.jpg");
-  display: none;
+ 
 }
 
 .link-xmas {
@@ -150,17 +151,17 @@
   border-radius: 6px;
 }
 
-.snow-container {
+/* .snow-container {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   z-index: -1;
-}
+} */
 
 /* Snowflake animation */
-.snowflake {
+/* .snowflake {
   position: absolute;
   top: 0;
   left: 0;
@@ -182,4 +183,4 @@
     transform: translateY(100vh);
     opacity: 0.5;
   }
-}
+} */
