@@ -15,10 +15,8 @@
   margin: 0;
   overflow: hidden;
 }
-.december {
-  background-image: url("./photos/xmastree.jpg");
-  display: none;
-}
+/* .december {
+} */
 .links {
   position: absolute;
   margin: 0;
@@ -143,7 +141,6 @@
 
 .xmas {
   background-image: url("photos/xmasdeco.jpg");
- 
 }
 
 .link-xmas {
