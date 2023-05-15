@@ -1,3 +1,9 @@
+import './style.css';
+import xmasTree from './photos/xmastree.jpg'
+
+const decBackgr = document.querySelector('.december');
+
+decBackgr.style.backgroundImage = `url('${xmasTree}')`;
 
 const december = new Date("December 1 2023 00:00:00");
 
@@ -23,6 +29,10 @@ const playSound = () => {
   const audio = new Audio("audios/xmassong.wav");
   audio.play();
 };
+
+const decLink = document.querySelector('.link-dec');
+
+decLink.addEventListener('click', playSound);
 
 const createSnowflake = () => {
   const snowflake = document.createElement('div');
@@ -57,10 +67,14 @@ let xmasCountdown = () => {
   sec.innerHTML = s < 10 ? "0" + s : s;
 }
 setInterval(xmasCountdown, 1000);
+
 let playSound2 = () => {
   let audio2 = new Audio("audios/sleighbells.wav");
   audio2.play();
 };
+
+const linkXmas = document.querySelector('.link-xmas');
+linkXmas.addEventListener('click', playSound2);
 
 
 
