@@ -19,6 +19,7 @@
 } */
 .links {
   position: absolute;
+  z-index: 100;
   margin: 0;
   right: 5%;
   top: 3%;
@@ -148,3 +149,8 @@
   border-radius: 6px;
 }
 
+/* hide */
+
+.hide {
+  display: none;
+}
