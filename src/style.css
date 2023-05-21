@@ -6,7 +6,9 @@
   background-size: cover;
   background-blend-mode: soft-light;
   background-position: center top;
+  position: absolute;
   height: 100vh;
+  width: 100vw;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -14,6 +16,8 @@
   align-items: center;
   margin: 0;
   overflow: hidden;
+  top: 0;
+  left: 0;
 }
 /* .december {
 } */
@@ -25,10 +29,11 @@
   top: 3%;
   color: white;
   text-decoration: none;
+  font-size: 1.2rem;
+  font-style: italic;
+  padding: 0.5vw;
 }
-.link-dec {
-  background-color: blueviolet;
-}
+
 .header {
   color: #f2e8cf;
   font-weight: bolder;
@@ -66,6 +71,21 @@
   font-size: 25px;
   text-shadow: 3px 3px 3px black, 4px 4px 4px black, 8px 8px 5px black;
 }
+/* xmas  */
+
+.xmas {
+  background-image: url("photos/xmasdeco.jpg");
+}
+
+.link-xmas {
+  background-color: #d90429;
+  border-radius: 6px;
+}
+
+.hide {
+  display: none;
+}
+
 .snow-container {
   position: fixed;
   top: 0;
@@ -137,20 +157,4 @@
     background-color: #3b6225;
     border-radius: 10px;
   }
-}
-/* xmas  */
-
-.xmas {
-  background-image: url("photos/xmasdeco.jpg");
-}
-
-.link-xmas {
-  background-color: #d90429;
-  border-radius: 6px;
-}
-
-/* hide */
-
-.hide {
-  display: none;
 }
