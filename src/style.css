@@ -1,8 +1,8 @@
 * {
   box-sizing: border-box;
 }
-body {
-  background-image: url("photos/xmasdeco.jpg");
+
+.background {
   background-size: cover;
   background-blend-mode: soft-light;
   background-position: center top;
@@ -15,27 +15,32 @@ body {
   margin: 0;
   overflow: hidden;
 }
-a {
+/* .december {
+} */
+.links {
   position: absolute;
+  z-index: 100;
   margin: 0;
   right: 5%;
   top: 3%;
   color: white;
   text-decoration: none;
-  background-color: #d90429;
-  border-radius: 6px;
 }
-h1 {
-  color: #f4f0bb;
+.link-dec {
+  background-color: blueviolet;
+}
+.header {
+  color: #f2e8cf;
   font-weight: bolder;
   text-shadow: 5px 5px 4px #101010;
   font-size: 65px;
   margin: -170px 0 40px;
 }
-#countdown {
+.countdown {
   display: flex;
   transform: scale(2);
 }
+
 .time {
   display: flex;
   flex-direction: column;
@@ -53,10 +58,10 @@ h1 {
     0px 2.2px 0px #3b6225, 0px 2.5px 0px #3b6225, 0px 3px 0px #3b6225,
     0px 3.2px 0px #3b6225, 0px 3.5px 0px #3b6225, 0px 4px 0px #3b6225,
     0px 4.2px 0px #3b6225, 0px 4.5px 0px #3b6225, 0px 5px 0px #3b6225,
-    0px 5.2px 5px #256103;
+    0px 5.2px 5px #183408;
 }
 .time p {
-  color: #f4f0bb;
+  color: #f2e8cf;
   margin: 0;
   font-size: 25px;
   text-shadow: 3px 3px 3px black, 4px 4px 4px black, 8px 8px 5px black;
@@ -67,7 +72,7 @@ h1 {
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: -1;
+  z-index: 99;
 }
 
 /* Snowflake animation */
@@ -96,7 +101,7 @@ h1 {
 }
 
 @media only screen and (max-width: 1024px) {
-  h1 {
+  .header {
     font-size: 45px;
     margin: -180px 0 40px;
   }
@@ -115,7 +120,7 @@ h1 {
     text-shadow: 2px 2px 2px black, 3px 3px 3px black, 4px 4px 4px black,
       8px 8px 5px black;
   }
-  #countdown {
+  .countdown {
     margin-top: 35px;
     display: block;
   }
@@ -126,9 +131,26 @@ h1 {
     justify-content: center;
     margin: 15px;
   }
-  a {
+  .link-dec {
     top: 5px;
     width: 30%;
+    background-color: #3b6225;
     border-radius: 10px;
   }
+}
+/* xmas  */
+
+.xmas {
+  background-image: url("photos/xmasdeco.jpg");
+}
+
+.link-xmas {
+  background-color: #d90429;
+  border-radius: 6px;
+}
+
+/* hide */
+
+.hide {
+  display: none;
 }
