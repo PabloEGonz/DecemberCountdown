@@ -1,4 +1,6 @@
-const december = new Date("December 1 2023 00:00:00");
+const year = new Date().getFullYear();
+
+const december = new Date(`December 1 ${year} 00:00:00`);
 const countdown = () => {
     const current = new Date();
     const left = december - current;
@@ -15,8 +17,7 @@ const countdown = () => {
     min.innerText = m < 10 ? "0" + m : m;
     sec.innerText = s < 10 ? "0" + s : s;
 }
-
-const xmas = new Date("December 24 2023 00:00:00");
+const xmas = new Date(`December 24 ${year} 00:00:00`);
 
 const xmasCountdown = () => {
     const sitting = new Date();
